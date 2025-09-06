@@ -11,7 +11,6 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-// Connect to MongoDB for signup
 const signupConnection = mongoose.createConnection('mongodb://localhost:27017/signupDB', {
     useNewUrlParser: true,
     useUnifiedTopology: true
