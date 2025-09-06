@@ -36,7 +36,6 @@ authConnection.once('open', () => {
 const SignupUser = signupConnection.model('User', signupUserSchema);
 const AuthUser = authConnection.model('User', authUserSchema);
 
-// Routes
 app.get('/', (req, res) => {
     res.render('login'); // Ensure you have a login.ejs file
 });
