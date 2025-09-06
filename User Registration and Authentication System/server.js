@@ -149,7 +149,6 @@ app.post('/update', async (req, res) => {
     }
 });
 
-// Delete route
 app.post('/delete', async (req, res) => {
     const { username } = req.body;
 
