@@ -22,7 +22,6 @@ signupConnection.once('open', () => {
     console.error('Error connecting to signupDB:', error);
 });
 
-// Connect to MongoDB for authentication
 const authConnection = mongoose.createConnection('mongodb://localhost:27017/authDB', {
     useNewUrlParser: true,
     useUnifiedTopology: true
