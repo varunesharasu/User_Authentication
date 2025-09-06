@@ -164,7 +164,7 @@ app.post('/delete', async (req, res) => {
         await AuthUser.deleteOne({ username });
         console.log('User deleted from authDB');
 
-        res.redirect('/'); // Redirect to home or any other page
+        res.redirect('/');
     } catch (error) {
         console.error('Error deleting user:', error);
         res.status(500).send('Error deleting user. Please try again.');
