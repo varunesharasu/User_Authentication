@@ -33,7 +33,6 @@ authConnection.once('open', () => {
     console.error('Error connecting to authDB:', error);
 });
 
-// Define User model for both connections
 const SignupUser = signupConnection.model('User', signupUserSchema);
 const AuthUser = authConnection.model('User', authUserSchema);
 
