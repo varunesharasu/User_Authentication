@@ -162,7 +162,6 @@ app.post('/delete', async (req, res) => {
         await SignupUser.deleteOne({ username });
         console.log('User deleted from signupDB');
 
-        // Delete user from authDB
         await AuthUser.deleteOne({ username });
         console.log('User deleted from authDB');
 
