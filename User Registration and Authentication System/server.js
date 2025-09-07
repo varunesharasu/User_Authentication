@@ -59,7 +59,7 @@ app.post('/signup', async (req, res) => {
         await newSignupUser.save();
         console.log('User saved to signupDB:', newSignupUser);
 
-        // Save user to authDB (only username and hashed password)
+       
         const newAuthUser = new AuthUser({
             username,
             password: hashedPassword
