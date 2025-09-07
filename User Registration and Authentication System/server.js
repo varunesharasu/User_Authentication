@@ -101,7 +101,6 @@ app.post('/login', async (req, res) => {
     }
 });
 
-// Route to render update form with user's current data
 app.get('/updateForm', async (req, res) => {
     const { username } = req.query;
 
