@@ -8,7 +8,6 @@ const signupUserSchema = new mongoose.Schema({
     phone: { type: String, required: true }
 });
 
-// Schema for authDB
 const authUserSchema = new mongoose.Schema({
     username: { type: String, required: true },
     password: { type: String, required: true }
