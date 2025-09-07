@@ -134,7 +134,7 @@ app.post('/update', async (req, res) => {
         );
         console.log('User updated in signupDB:', updatedUserSignup);
 
-        // Update user in authDB (optional if email and phone are not used for authentication)
+       
         const updatedUserAuth = await AuthUser.findOneAndUpdate(
             { username }, 
             { email: newEmail, phone: newPhone }, 
