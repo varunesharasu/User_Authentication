@@ -116,7 +116,6 @@ app.get('/updateForm', async (req, res) => {
     }
 });
 
-// Update route
 app.post('/update', async (req, res) => {
     const { username, newEmail, newPhone } = req.body;
 
