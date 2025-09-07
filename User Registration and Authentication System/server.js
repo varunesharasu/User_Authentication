@@ -124,7 +124,7 @@ app.post('/update', async (req, res) => {
     }
 
     try {
-        // Update user in signupDB
+       
         const updatedUserSignup = await SignupUser.findOneAndUpdate(
             { username }, 
             { email: newEmail, phone: newPhone }, 
