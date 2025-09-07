@@ -142,7 +142,7 @@ app.post('/update', async (req, res) => {
 
         res.json({ updatedEmail: updatedUserSignup.email, updatedPhone: updatedUserSignup.phone });
     } catch (error) {
-        console.error('Error updating user:', error);
+        console.error('Error in updating user:', error);
         res.status(500).send('Error updating user. Please try again.');
     }
 });
