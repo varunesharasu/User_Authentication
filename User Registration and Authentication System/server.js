@@ -93,7 +93,7 @@ app.post('/login', async (req, res) => {
        
         const loggedInUser = await SignupUser.findOne({ username });
 
-        // Render user.ejs with user data
+       
         res.render('user', { user: loggedInUser });
     } catch (error) {
         console.error('Error in login:', error);
