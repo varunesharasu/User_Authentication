@@ -90,7 +90,7 @@ app.post('/login', async (req, res) => {
             return res.status(400).send('Invalid credentials');
         }
 
-        // Fetch user details from signupDB for the logged-in user
+       
         const loggedInUser = await SignupUser.findOne({ username });
 
         // Render user.ejs with user data
