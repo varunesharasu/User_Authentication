@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-// Schema for signupDB
+
 const signupUserSchema = new mongoose.Schema({
     username: { type: String, required: true },
     password: { type: String, required: true },
